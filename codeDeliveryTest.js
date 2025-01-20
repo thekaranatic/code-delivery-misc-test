@@ -12,5 +12,7 @@ function whatsHappening(choice){
         case 4:
             console.log(choice*2);
             break;
+        default:
+            console.log("Invalid option");
     }
 }
