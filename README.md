@@ -1,6 +1,6 @@
 > PersonalNote: Refer TODO in `Issues` of this repo
 
-### Tried importing the code through GitHub raw content before I explore `jsDelivr` or `cdnjs`
+### 1. Tried importing the code through GitHub raw content before I explore `jsDelivr` or `cdnjs`
 - Resource URL: `https://raw.githubusercontent.com/thekaranatic/code-delivery-misc-test/refs/heads/main/codeDeliveryTest.js`
 - Turns out that Github raw content sends a `plaintext` mime type through response headers
 - This is not helping to import the function from the imported resource (js file)
@@ -14,7 +14,7 @@ was blocked due to MIME type (“text/plain”) mismatch (X-Content-Type-Options
 ```plaintext
 Loading failed for the <script> with source “https://raw.githubusercontent.com/thekaranatic/code-delivery-misc-test/refs/heads/main/codeDeliveryTest.js”.
 ```
-### Turns out that response headers need to send 'application/javascript' mime type so that we can import the function
+### 2. Turns out that response headers need to send 'application/javascript' mime type so that we can import the function
  - An HTTP `GET` request on raw text & JS delivery shows the distinction in  `CONTENT TYPE` response:
 
 | HTTP Headers - Raw Text | HTTP Headers - JS |
@@ -25,5 +25,7 @@ Loading failed for the <script> with source “https://raw.githubusercontent.com
 
 - If you notice that the colored text (js body) doesn't contain `default` block in switch statement as it does in the raw text version. This is due to the latest update of the file.
 
-### Now the next task is to figure out how to ensure the CDN delivers latest version of the code
+### 3. Now the next task is to figure out how to ensure the CDN delivers latest version of the code
+- [ ] Check todo
+- [ ] Figure the same (Headline 3)
 
